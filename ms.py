@@ -23,10 +23,7 @@ class Vision(object):
             'language': 'en',
         })
 
-        # Replace the three dots below with the URL of a JPEG image of a celebrity.
-
         body = json.dumps({'url': self.image})
-        # body = "{'url':'" +  + "'}".format(self.image)
 
         try:
             # Execute the REST API call and get the response.
@@ -41,8 +38,3 @@ class Vision(object):
             print('Error:')
             print(e)
 
-
-# this_vision = Vision('http://images.metmuseum.org/CRDImages/ep/web-large/ep89.21.1.R.jpg')
-# pprint(this_vision.result)
-
-# print(this_vision.result['description']['captions'][0]['text'].title())

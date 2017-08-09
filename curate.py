@@ -15,8 +15,6 @@ image_url = random.choice(art_data['art'])
 image_url = art_data['art'][2]
 
 this_vision = ms.Vision(image_url)
-# pprint(this_vision.result)
-
 
 image_title = this_vision.result['description']['captions'][0]['text'].title()
 
