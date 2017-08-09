@@ -1,0 +1,5 @@
+zappa
+python-twitter
+simplejson
+requests
+Faker
