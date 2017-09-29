@@ -12,7 +12,6 @@ art_data = json.load(open('art.json'))
 fake = Factory.create(random.choice(config.LOCALES))
 
 image_url = random.choice(art_data['art'])
-image_url = art_data['art'][2]
 
 this_vision = ms.Vision(image_url)
 
